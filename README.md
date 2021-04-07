@@ -20,3 +20,11 @@ Expressed as a list of features, **Mango** has the following:
 - a string data structure
 - an array data structure
 - a hash data structure
+
+## Parser
+No use of parser generators, like **bison** or **ANTLR**. Instead, the interpreter has its own parser written by hand. It performs **recursive descent parsing** and some trade-offs were made:
+- It won't be the fastest of all time
+- There's no formal proof of its correctness
+- Its error-recovery process and detection of erroneous syntax isn't bullet proof.
+
+The only purpose here was to write a fully working parser for de Mango Programming Language, open for extensions and improvements, easy to understand and a great start for the dive into the topic of parsing.
